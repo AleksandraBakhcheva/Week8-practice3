@@ -1,0 +1,17 @@
+/* style for header */
+
+.header {
+    display: flex;
+    height: 11vh;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5vw;
+}
+.header__button {
+    padding: 1.2vh 1.1vw 1.2vh 1.1vw;
+    font-size: 0.812em;
+    border-radius: 100px;
+    border: none;
+    color: var(--button-color);
+    background-color: var(--button-background);
+}

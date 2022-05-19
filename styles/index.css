@@ -1,0 +1,23 @@
+/* general style */
+
+/* fonts */
+@font-face {
+    font-family: 'Intro Demo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Intro Demo'), url('https://fonts.cdnfonts.com/s/12893/IntroDemoBlackCaps.woff') format('woff');
+}
+body {
+    font-family: 'Intro Demo', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --button-background: #5222D0;  
+    --button-color: #FFFFFF;
+    --border-color: #BB2247;
+    --block-background: #EC615B;
+    --link-color: #000000;
+    --additional-font: 'Roboto Slab', serif;
+}

@@ -1,0 +1,36 @@
+/* style for main part */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main__firstcolumn {
+    padding-left: 8.5vw;
+    padding-top: 2.7vh;
+}
+.firstcolumn__header {
+    margin-bottom: auto;
+    font-size: 3.75em;
+}
+.firstcolumn__paragraph {
+    margin-bottom: 4.5vh;
+    line-height: 1.6;
+    font-family: var(--additional-font);
+    font-size: 1.25em;
+}
+.main__button {
+    margin-left: -1vw;
+}
+.button_modify {
+    padding: 2.9vh 2.7vw 2.1vh 2.7vw ;
+    font-size: 2.187em;
+    border-radius: 100px;
+    border: none;
+    color: var(--button-color);
+    background-color: var(--button-background);
+}
+.secondcolumn__image {
+    position: absolute;
+    top: 16%;
+    left: 49%;
+}

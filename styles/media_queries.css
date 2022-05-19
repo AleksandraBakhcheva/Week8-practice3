@@ -1,0 +1,113 @@
+/* media queries */
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 500px;
+    }
+    .main__firstcolumn {
+        grid-column: 1 / 3;
+        margin-bottom: 2vh;
+        padding-left: 0;
+        text-align: center;
+        justify-self: center;
+    }
+    .main__secondcolumn {
+        display: none;
+    }
+    .main__button {
+        margin-left: 0;
+        margin-bottom: 2vh;
+    }
+    .footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0;
+        align-items: center;
+    }
+    .main__header {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .main__container {
+        display: inline-grid;
+        grid-template-areas: "item1" 
+                            "item2" 
+                            "item3"
+                        "item4"
+                        "item5"
+                        "item6";
+        grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: 1fr;
+    }
+    .container__item1, .container__item2,
+    .container__item3, .container__item4,
+    .container__item5, .container__item6 {
+        border: none;
+        width: 80vw;
+        height: max-content;
+        text-align: center;
+        margin: 0.5vh 0vw 0.5vw 8vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        height: 90vh;
+    }
+    .main__firstcolumn {
+        width: 50vw;
+    }
+    .secondcolumn__picture {
+        display: none;
+    }
+    .secondcolumn__image {
+        height: fit-content;
+        left: 40%;
+        z-index: -1;
+    }
+    .footer {
+        padding-left: 0;
+        margin-bottom: 2vh;
+        margin-top: 5vh;
+        height: fit-content;
+        justify-content: space-around;
+    }
+    .footer__link {
+        height: fit-content;
+    }
+    .main__header {
+        justify-content: center;
+        padding-left: 0; 
+    }
+    .main__container {
+        display: inline-grid;
+        grid-template-areas: "item1 item2" 
+                            "item3 item4"
+                        "item5 item6";
+        grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        margin: 0;
+        gap: 1%;
+    }
+    .container__item1, .container__item2,
+    .container__item3, .container__item4,
+    .container__item5, .container__item6 {
+        border: none;
+        width: 40vw;
+        height: max-content;
+        text-align: center;
+        margin: 0.5vh 0vw 4vw 2vw;
+        row-gap: 3%;
+    }
+    .container__item5 {
+        grid-column: 2 / 3;
+        grid-row: 2 / span 3;
+        margin-top: 31.5vh;
+    }
+    .container__item6 {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        width: 55vw;
+        margin-left: 22.5vw;
+    }
+}
